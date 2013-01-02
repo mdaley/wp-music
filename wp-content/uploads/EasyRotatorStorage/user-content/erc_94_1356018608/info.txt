@@ -1,0 +1,1 @@
+a:9:{s:4:"name";s:4:"Main";s:11:"description";N;s:12:"isCheckedOut";b:0;s:19:"checkedOutMachineID";s:30:"FrEHNBesWGfr6Cp7oPuFncOTdwUplq";s:14:"checkedOutTime";i:1356078339;s:10:"checkOutID";s:30:"Du5ZaXMN1tsG1FujSdxpg1c6JhWa3h";s:13:"checkedInTime";i:1356078374;s:18:"checkedInMachineID";s:30:"FrEHNBesWGfr6Cp7oPuFncOTdwUplq";s:9:"checkInID";s:30:"Nixjmh3xcWfMD5CJ8VwBypSETdCKzS";}
