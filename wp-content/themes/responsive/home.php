@@ -32,7 +32,7 @@ if ( !defined('ABSPATH')) exit;
 					echo do_shortcode($options['featured_content']);
 		    // If not display dummy image for preview purposes
 			      } else {             
-                    echo '<img class="aligncenter" src="'.get_stylesheet_directory_uri().'/images/trumpet.jpg" width="850" height="350" alt="" />'; 
+                    echo '<img class="aligncenter" src="'.get_stylesheet_directory_uri().'/wp-content/themes/responsive/images/trumpet.jpg" width="850" height="350" alt="" />'; 
  				  }
 			?> 
         </div><!-- end of #featured-image --> 

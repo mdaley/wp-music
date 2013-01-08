@@ -60,22 +60,9 @@ if ( !defined('ABSPATH')) exit;
         
     <?php responsive_in_header(); // header hook ?>
    
-	<?php if ( get_header_image() != '' ) : ?>
-               
         <div id="logo">
-            <a href="<?php echo home_url('/'); ?>"><img src="<?php header_image(); ?>" width="<?php if(function_exists('get_custom_header')) { echo get_custom_header() -> width;} else { echo HEADER_IMAGE_WIDTH;} ?>" height="<?php if(function_exists('get_custom_header')) { echo get_custom_header() -> height;} else { echo HEADER_IMAGE_HEIGHT;} ?>" alt="<?php bloginfo('name'); ?>" /></a>
+            <a href="<?php echo home_url('/'); ?>"><img src="<?php get_stylesheet_directory_uri(); ?>/wp-content/themes/responsive/images/BannerTransparentWhite.png" width="<?php if(function_exists('get_custom_header')) { echo get_custom_header() -> width;} else { echo HEADER_IMAGE_WIDTH;} ?>" height="<?php if(function_exists('get_custom_header')) { echo get_custom_header() -> height;} else { echo HEADER_IMAGE_HEIGHT;} ?>" alt="<?php bloginfo('name'); ?>" /></a>
         </div><!-- end of #logo -->
-        
-    <?php endif; // header image was removed ?>
-
-    <?php if ( !get_header_image() ) : ?>
-                
-        <div id="logo">
-            <span class="site-name"><a href="<?php echo home_url('/'); ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>" rel="home"><?php bloginfo('name'); ?></a></span>
-            <span class="site-description"><?php bloginfo('description'); ?></span>
-        </div><!-- end of #logo -->  
-
-    <?php endif; // header image was removed (again) ?>
     
     <?php get_sidebar('top'); ?>
 			    
